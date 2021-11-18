@@ -78,7 +78,7 @@ window.onscroll = function () {
 };
 
 function scrolled() {
-  if (window.pageYOffset >= sticky) {
+  if (window.scrollY != 0) {
     nav.classList.add("sticky");
     mainSection.classList.add("sticky-main-section");
   } else {

@@ -23,8 +23,7 @@ nav {
     grid-template-columns: 5% 1fr 1fr 5%;
     color: white;
     align-items: center;
-    min-height: 15vh;
-    
+    height: 100px;
     
     border-radius:100%; 
 }
@@ -145,7 +144,7 @@ nav ul li button:hover {
 #about {
     margin: 70vh 50px;
     color: white;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 110px;
     border-radius: 5px;
     padding: 25px;
     background-color: #161a3b;
@@ -183,7 +182,7 @@ nav ul li button:hover {
 
 
 #projects {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 110px;
 }
 #projects h3{
     font-size: 80px;
@@ -310,7 +309,7 @@ nav ul li button:hover {
 #contact-me {
     margin-top: 70vh;
     margin-bottom: 20vh;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 110px;
 }
 #contact {
     width: 80%;
@@ -326,7 +325,7 @@ nav ul li button:hover {
     margin-bottom: 50px;
     text-decoration: underline;
 }
-#contact-me p:first-of-type {
+#contact-me p {
     font-size: 25px;
     text-align: center;
     padding: 0 25vw;
