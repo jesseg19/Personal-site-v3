@@ -489,13 +489,15 @@ footer a {
 
         grid-template-columns: 1fr;
         grid-template-rows: 10% 10% 10% 10%;
+ 
     }
 
-    .project::after {
+    /* .project::after {
         padding-top: 300px;
         font-size: 90px;
 
-    }
+    } */
+
 
     .project-right .project-text h4, .project-left .project-text h4 {
         text-align: center;
@@ -512,6 +514,7 @@ footer a {
         width: 80%;
         margin: 10% auto;
         text-align: center;
+
     }
     .project img {
         margin: 0 auto;
@@ -520,6 +523,7 @@ footer a {
         display: block;
         padding: 0px 0;
     }
+
     .project-left .description {
         margin: 10% auto;
         text-align: center;
