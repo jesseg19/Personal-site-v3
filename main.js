@@ -58,8 +58,13 @@ let hamburger = document.querySelector(".mobile-menu");
 let mobileMenuElements = document.querySelector("ul");
 let mobileMenuLis = document.querySelectorAll("li");
 
+let nav = document.querySelector("nav");
+let mainSection = document.querySelector("#main-section");
+let sticky = nav.offsetTop;
+
 hamburger.addEventListener("click", mobileMenu);
 
+//close the menu when any one the elements are clicked
 for (let x = 0; x < mobileMenuLis.length; x++) {
   mobileMenuLis[x].addEventListener("click", mobileMenu);
 }
@@ -68,18 +73,16 @@ function mobileMenu() {
   mobileMenuElements.classList.toggle("open-mobile-menu");
 }
 
-let nav = document.querySelector("nav");
-let sticky = nav.offsetTop;
-console.log(sticky);
-
 window.onscroll = function () {
   scrolled();
 };
 
 function scrolled() {
-  if (window.pageYOffset + 3 >= sticky) {
+  if (window.pageYOffset >= sticky) {
     nav.classList.add("sticky");
+    mainSection.classList.add("sticky-main-section");
   } else {
     nav.classList.remove("sticky");
+    mainSection.classList.remove("sticky-main-section");
   }
 }

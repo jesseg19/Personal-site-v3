@@ -86,16 +86,17 @@ nav ul li button:hover {
     z-index: 1000;
     background-color:#141836; 
     border-radius: 0px;
-    transition: 0.7s ease-in-out;
+    transition: 0.4s ease-in-out;
 
     box-shadow: 5px 10px 8px #00000041;
 }
 
 
 
-
+.sticky-main-section {
+    padding-top: 80px;
+}
 #main-section {
-    transition: 0.3s ease-in-out;
     color: white;
     display: grid;
     grid-template-columns: 1fr minmax(320px, 3fr) 1fr;
@@ -144,7 +145,7 @@ nav ul li button:hover {
 #about {
     margin: 70vh 50px;
     color: white;
-
+    scroll-margin-top: 100px;
     border-radius: 5px;
     padding: 25px;
     background-color: #161a3b;
@@ -181,9 +182,9 @@ nav ul li button:hover {
 
 
 
-/*#projects {
-    margin: 0 5vw;
-}*/
+#projects {
+    scroll-margin-top: 100px;
+}
 #projects h3{
     font-size: 80px;
     margin-left: 10vw;
@@ -306,11 +307,10 @@ nav ul li button:hover {
 
 
 
-
 #contact-me {
     margin-top: 70vh;
     margin-bottom: 20vh;
-    
+    scroll-margin-top: 100px;
 }
 #contact {
     width: 80%;
@@ -440,6 +440,7 @@ footer h5{
 
     #about {
         margin: 50vh 0;
+        scroll-margin-top: 140px;
     }
     #about-container {
         display: block;
@@ -459,6 +460,9 @@ footer h5{
         margin: 0 22%;
     }
 
+    #projects {
+        scroll-margin-top: 140px;
+    }
     #projects h3{
         font-size: 50px;
         text-align: center;
@@ -513,6 +517,7 @@ footer h5{
     #contact {
         width: 80%;
         margin: 0 auto;
+        scroll-margin-top: 180px;
     }
     #contact-me h3 {
         font-size: 50px;
