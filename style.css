@@ -205,7 +205,7 @@ nav ul li button:hover {
     background-color: #161a3b;
     position: relative;
 }
-.project::after {
+/* .project::after {
     content: "Coming Soon";
     text-align: center;
     padding-top: 150px;
@@ -215,8 +215,9 @@ nav ul li button:hover {
     left:0;
     right:0;
     bottom: 0;
+    
     background-color: rgba(0, 0, 0, 0.9);
-}
+} */
 
 .project-image, .description {
     grid-row: 1 / 2;
@@ -268,6 +269,7 @@ nav ul li button:hover {
 
 .project-left img {
     grid-column:2/9;
+    display: block; 
 }
 
 .project-left .project-text h4 {
@@ -361,11 +363,19 @@ footer h5{
     font-weight: 100;
     padding: 15px 0;
 }
+footer a {
+    text-decoration: underline;
+    color: #EEC643;
+}
 
 
 
 
 /* --------- MEIDA QUERIES ---------------*/
+@-moz-document url-prefix() {
+    
+}
+
 @media only screen and (min-width: 601px) and (max-width: 1020px) {
     
 }
@@ -373,13 +383,15 @@ footer h5{
 
 @media only screen and (max-width: 1020px) {
     nav {
-        transition: all 0.2s ease-in-out;
+        transition: all 0.2s linear;
+        -webkit-transition: all 0.2s linear;
     }
 
     nav ul{
         opacity:0;
         transform: translateY(-100%);  
         transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -402,6 +414,7 @@ footer h5{
 
     .open-mobile-menu {
         transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
         background-color: #2D3047;
         top: 0;
         padding: 90px 0;
@@ -459,6 +472,7 @@ footer h5{
         margin: 0 22%;
     }
 
+    
     #projects {
         scroll-margin-top: 140px;
     }
@@ -475,6 +489,12 @@ footer h5{
 
         grid-template-columns: 1fr;
         grid-template-rows: 10% 10% 10% 10%;
+    }
+
+    .project::after {
+        padding-top: 300px;
+        font-size: 90px;
+
     }
 
     .project-right .project-text h4, .project-left .project-text h4 {
@@ -497,6 +517,8 @@ footer h5{
         margin: 0 auto;
         grid-column: 1/8;
         grid-row: 2/4;
+        display: block;
+        padding: 0px 0;
     }
     .project-left .description {
         margin: 10% auto;
@@ -524,7 +546,7 @@ footer h5{
         margin-bottom: 50px;
         margin-left: 0;
     }
-    #contact-me p:first-of-type {
+    #contact-me p {
         font-size: 25px;
         text-align: center;
         padding: 0 10px;
@@ -532,7 +554,13 @@ footer h5{
     
     }
 
+    footer h5 {
+        font-size: 15px;
+    }
+
 
 }
+
+
 
 
