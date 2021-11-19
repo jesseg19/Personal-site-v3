@@ -205,7 +205,7 @@ nav ul li button:hover {
     background-color: #161a3b;
     position: relative;
 }
-/* .project::after {
+.project::after {
     content: "Coming Soon";
     text-align: center;
     padding-top: 150px;
@@ -217,7 +217,7 @@ nav ul li button:hover {
     bottom: 0;
     
     background-color: rgba(0, 0, 0, 0.9);
-} */
+} 
 
 .project-image, .description {
     grid-row: 1 / 2;
@@ -237,12 +237,18 @@ nav ul li button:hover {
 .icons {
     text-align: right;
 }
+.project-left .icons {
+    text-align: left;
+}
 .icon {
     width: 55px;
     display: inline-flex;
     margin-top: 30px;
     padding: 0 10px;
-    
+}
+.project-left .icon {
+    width: 80px;
+    height: 80px;
 }
 .description {
     grid-column: 2 / -1;
@@ -372,14 +378,6 @@ footer a {
 
 
 /* --------- MEIDA QUERIES ---------------*/
-@-moz-document url-prefix() {
-    
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1020px) {
-    
-}
-
 
 @media only screen and (max-width: 1020px) {
     nav {
@@ -389,7 +387,7 @@ footer a {
 
     nav ul{
         opacity:0;
-        transform: translateY(-100%);  
+        transform: translateY(-150%);  
         transition: all 0.2s ease-in-out;
         -webkit-transition: all 0.2s ease-in-out;
         position: absolute;
@@ -397,8 +395,10 @@ footer a {
         width: 100%;
         display: block;
         text-align: center;
-        
-        
+    }
+    nav ul li:hover {
+        transform: translate(1.1);
+        border-bottom: none;
     }
     .mobile-menu {
         display: block;
@@ -492,36 +492,49 @@ footer a {
  
     }
 
-    /* .project::after {
+    .project::after {
         padding-top: 300px;
         font-size: 90px;
 
-    } */
+    }
 
 
     .project-right .project-text h4, .project-left .project-text h4 {
         text-align: center;
-        grid-row: -1/4;
     }
     .icons {
+        text-align: center;
+        margin-bottom: -40px;
+        margin-top: -20px;
+    }
+    .project-left .icons {
         text-align: center;
     }
     .icon {
         width: 55px;
+    }
+    .project-left .icon {
+        width: 140px;
+        height: 140px;
     }
 
     .description {
         width: 80%;
         margin: 10% auto;
         text-align: center;
+        padding: 20px;
 
     }
     .project img {
-        margin: 0 auto;
+        margin: 30px auto;
         grid-column: 1/8;
-        grid-row: 2/4;
+        grid-row: 7/10;
         display: block;
         padding: 0px 0;
+    }
+    .project button {
+        grid-row: 10/10;
+        margin-top: -100px;
     }
 
     .project-left .description {
