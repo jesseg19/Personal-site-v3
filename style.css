@@ -16,8 +16,6 @@ a {
 }
 
 
-
-
 nav {
     display: grid;
     grid-template-columns: 5% 1fr 1fr 5%;
@@ -103,6 +101,7 @@ nav ul li button:hover {
 } 
 #main-text {
     grid-column: 2/3;
+    
 }
 #main-text h2 {
     font-size: 2vw;
@@ -378,6 +377,21 @@ footer a {
 
 
 /* --------- MEIDA QUERIES ---------------*/
+@media only screen and (min-width: 2200px) {
+    #main-text h2{
+        font-size: 40px;
+    }
+    #main-text h3 {
+        font-size: 150px;
+    }
+    #main-text h4 {
+        font-size: 100px;
+        
+    }
+    #main-text p {
+        font-size: 35px;
+    }
+}
 
 @media only screen and (max-width: 1020px) {
     nav {
