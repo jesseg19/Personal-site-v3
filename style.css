@@ -204,7 +204,7 @@ nav ul li button:hover {
     background-color: #161a3b;
     position: relative;
 }
-.project::after {
+.project-left::after {
     content: "Coming Soon";
     text-align: center;
     padding-top: 150px;
@@ -292,6 +292,7 @@ nav ul li button:hover {
     border-radius: 5px;
     font-size: 15px;
 }
+
 
 .project-right button{
     grid-column: 8/9;
@@ -506,7 +507,7 @@ footer a {
  
     }
 
-    .project::after {
+    .project-left::after {
         padding-top: 300px;
         font-size: 90px;
 
