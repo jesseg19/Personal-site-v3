@@ -1,3 +1,3 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/jessjqhu/repositories/Personal-site-v3
+    - export DEPLOYPATH=/home/jessjqhu/public_html
